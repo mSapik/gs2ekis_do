@@ -1,0 +1,9 @@
+services:
+  gs2ekis_do:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./.secrets:/app/.secrets
+    env_file:
+      - ./.secrets/.env

@@ -1,0 +1,7 @@
+services:
+  gs2ekis_do:
+    image: msapik/gs2ekis_do
+    volumes:
+      - ./.secrets:/app/.secrets
+    env_file:
+      - ./.secrets/.env
